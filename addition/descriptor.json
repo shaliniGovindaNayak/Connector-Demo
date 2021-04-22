@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "title": "add",
     "description": "addition of two numbers",
-    "homepage": "https://github.com/shaliniGovindaNayak/demo/addtion",
+    "homepage": "https://github.com/shaliniGovindaNayak/Connector-Demo/addition",
     "input": [
       {
         "name": "Num1",
