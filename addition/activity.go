@@ -36,6 +36,10 @@ func (a *Activity) Metadata() *activity.Metadata {
 func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 
 	input := &Input{}
+	err = ctx.GetInputObject(input)
+	if err != nil {
+		return true, err
+	}
 	fmt.Println(input.Num1)
 
 	out := input.Num1 + input.Num2
