@@ -1,6 +1,8 @@
 package addition
 
 import (
+	"fmt"
+
 	"github.com/project-flogo/core/activity"
 )
 
@@ -34,6 +36,7 @@ func (a *Activity) Metadata() *activity.Metadata {
 func (a *Activity) Eval(ctx activity.Context) (done bool, err error) {
 
 	input := &Input{}
+	fmt.Println(input.Num1)
 
 	out := input.Num1 + input.Num2
 
